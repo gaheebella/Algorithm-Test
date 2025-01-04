@@ -1,8 +1,9 @@
-nums = input().split()
+n1, n2 = input().split()
 
-re_nums = [n[::-1] for n in nums]
+n1 = int(n1[::-1])
+n2 = int(n2[::-1])
 
-if (re_nums[0] > re_nums[1]):
-  print(re_nums[0])
+if (n1 > n2):
+  print(n1)
 else:
-  print(re_nums[1])
+  print(n2)
