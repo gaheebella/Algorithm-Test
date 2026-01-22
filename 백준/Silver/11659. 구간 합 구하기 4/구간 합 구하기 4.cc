@@ -10,9 +10,8 @@ int main()
     
     int N, M;
     cin >> N >> M;
-    int S[100001] = {};
-    S[0] = 0; //초기값
-
+    int S[100001] = {}; // {} : 배열의 모든 원소를 0으로 초기화
+    
     //i부터 j까지 누적합을 미리 계산
     for (int i = 1; i <= N; i++)
     {
@@ -30,7 +29,6 @@ int main()
         cin >> start >> end;
         cout << S[end] - S[start - 1] << '\n';
     }
-    
     
     return 0;
 }
